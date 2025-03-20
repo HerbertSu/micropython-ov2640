@@ -17,14 +17,14 @@ This particular camera has both an i2c and spi interface for setup and
 getting data on/off the camera.  A good way to wire up the camera to
 the ESP8266 is as follows (note Vcc and GND pins are not included here):
 
- Camera Pin | ESP8266 Pin  |
-| --------- | ------------ |
-| CS        | GPIO2        |
-| MOSI      | GPIO13       |
-| MISO      | GPIO12       |
-| SCK       | GPIO14       |
-| SDA       | GPIO4        |
-| SCL       | GPIO5        |
+ Camera Pin | ESP8266 Pin  | PICO Pin  |
+| --------- | ------------ | ------------ |
+| CS        | GPIO2        | GPI17        |
+| MOSI      | GPIO13       | GPI19        |
+| MISO      | GPIO12       | GPI16        |
+| SCK       | GPIO14       | GPI18        |
+| SDA       | GPIO4        | GPI26        |
+| SCL       | GPIO5        | GPI27        |
 
 ## Usage - Software
 
